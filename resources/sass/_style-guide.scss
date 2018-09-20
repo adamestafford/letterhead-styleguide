@@ -1,0 +1,84 @@
+/* Base */
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+.border {
+	border: solid 1px #ccc;
+	padding: 15px;
+}
+.divider {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	height: 2px;
+	border-top: solid 2px #ccc;
+}
+/* Components */
+#color,
+#icon,
+#button,
+#type,
+#mixin {
+	margin-bottom: 30px;
+}
+#sidebar {
+	padding: 0 15px;
+}
+#main {
+	background: #fff;
+	width: 100%;
+	padding: 15px;
+}
+/* Colors */
+.color-swatch {
+	margin-bottom: 30px;
+}
+.color-swatch .top-swatch {
+	height: 80px;
+	margin-bottom: 8px;
+}
+/* Typography */
+.title h1 {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.hero {
+	font-size: 75px;
+	font-weight: 900;
+	font-family: 'Muli', sans-serif;
+}
+#type .type-item {
+	padding: 15px 0;
+}
+#type .styles p {
+	margin-bottom: 0;
+	color: #999;
+}
+#type p span {
+	font-weight: 900;
+	color: #777;
+}
+.fonts p {
+	margin-bottom: 0;
+}
+/* Navigation */
+.navbar, .navbar-inverse {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	min-height: 80px;
+}
+.nav li {
+	display: block;
+	color: white;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: #333;
+}
+.navbar-inverse .navbar-nav li a:hover {
+	height: 100%;
+}
+
+@media(max-width: 768px) {
+
+}
