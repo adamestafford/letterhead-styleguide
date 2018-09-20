@@ -11,7 +11,8 @@
   "author": "Andrew Leach",
   "license": "MIT",
   "dependencies": {
-    "sass-rem": "^2.0.1"
+    "sass-rem": "^2.0.1",
+    "feather-icons": "^4.7.3"
   },
   "devDependencies": {
     "bootstrap": "^4.1.3",

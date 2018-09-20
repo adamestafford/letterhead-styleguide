@@ -1,3 +1,7 @@
-#sidebar {
+#sidebar-wrapper {
 	background: $dark;
+	#sidebar {
+		background: $dark;
+		padding: 0;
+	}
 }

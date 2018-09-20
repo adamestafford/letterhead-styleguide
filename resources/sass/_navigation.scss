@@ -1,0 +1,22 @@
+.navbar {
+	ul {
+		li {
+			a {
+				color: #fff;
+				font-size: $font-size-base;
+				svg {
+					width: 18px;
+					height: 18px;
+					position: relative;
+					bottom: 3px;
+					margin-right: 8px;
+				}
+				&:hover {
+					svg {
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
+}

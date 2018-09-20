@@ -7,6 +7,11 @@ ul {
 	border: solid 1px #ccc;
 	padding: 15px;
 }
+.border-no-top {
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+}
 .divider {
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -21,21 +26,20 @@ ul {
 #mixin {
 	margin-bottom: 30px;
 }
-#sidebar {
-	padding: 0 15px;
-}
 #main {
 	background: #fff;
 	width: 100%;
 	padding: 15px;
 }
-/* Colors */
+/* Color Swatches */
 .color-swatch {
 	margin-bottom: 30px;
-}
-.color-swatch .top-swatch {
-	height: 80px;
-	margin-bottom: 8px;
+	.top-swatch {
+		height: 80px;
+	}
+	.swatch-detail {
+		padding: 15px;
+	}
 }
 /* Typography */
 .title h1 {
@@ -78,7 +82,44 @@ ul {
 .navbar-inverse .navbar-nav li a:hover {
 	height: 100%;
 }
-
+#sidebar {
+	.sidebar-brand {
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+}
+#icon {
+	.icon-detail {
+		padding: 30px;
+		background: theme-color("gray-200");
+		margin-top: 30px;
+		margin-bottom: 30px;
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.icons {
+		.icon-item {
+			margin: 0 auto;
+			text-align: center;
+			h4 {
+				margin-bottom: 15px;
+			}
+			svg {
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+	}
+}
+#button {
+	.btn {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
 @media(max-width: 768px) {
 
 }

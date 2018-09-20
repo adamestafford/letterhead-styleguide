@@ -2861,8 +2861,68 @@ body {
   }
 }
 
+#sidebar-wrapper {
+  background: #343a40;
+}
+
+#sidebar-wrapper #sidebar {
+  background: #343a40;
+  padding: 0;
+}
+
 .menu-btn {
-  font-size: 1.875rem;
+  float: right;
+}
+
+.menu-btn svg {
+  width: 40px;
+  height: 40px;
+}
+
+.btn {
+  color: #007bff;
+  background-color: transparent;
+  border: 2px #007bff solid;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.btn-default {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-default:hover {
+  background-color: #0062cc;
+  border-color: #0062cc;
+}
+
+.btn-lg {
+  font-size: 1rem;
+}
+
+.navbar ul li a {
+  color: #fff;
+  font-size: 0.9375rem;
+}
+
+.navbar ul li a svg {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  bottom: 3px;
+  margin-right: 8px;
+}
+
+.navbar ul li a:hover svg {
+  color: #007bff;
 }
 
 body {
@@ -2878,10 +2938,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#sidebar {
-  background: #343a40;
-}
-
 /* Base */
 
 ul {
@@ -2892,6 +2948,12 @@ ul {
 .border {
   border: solid 1px #ccc;
   padding: 15px;
+}
+
+.border-no-top {
+  border-left: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
 }
 
 .divider {
@@ -2911,17 +2973,13 @@ ul {
   margin-bottom: 30px;
 }
 
-#sidebar {
-  padding: 0 15px;
-}
-
 #main {
   background: #fff;
   width: 100%;
   padding: 15px;
 }
 
-/* Colors */
+/* Color Swatches */
 
 .color-swatch {
   margin-bottom: 30px;
@@ -2929,7 +2987,10 @@ ul {
 
 .color-swatch .top-swatch {
   height: 80px;
-  margin-bottom: 8px;
+}
+
+.color-swatch .swatch-detail {
+  padding: 15px;
 }
 
 /* Typography */
@@ -2984,5 +3045,38 @@ ul {
 
 .navbar-inverse .navbar-nav li a:hover {
   height: 100%;
+}
+
+#sidebar .sidebar-brand {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+#icon .icon-detail {
+  padding: 30px;
+  background: #F0F4F7;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#icon .icon-detail p:last-child {
+  margin-bottom: 0;
+}
+
+#icon .icons .icon-item {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#icon .icons .icon-item h4 {
+  margin-bottom: 15px;
+}
+
+#icon .icons .icon-item svg:hover {
+  color: #007bff;
+}
+
+#button .btn:hover {
+  cursor: pointer;
 }
 

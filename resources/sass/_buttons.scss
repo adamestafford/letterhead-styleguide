@@ -1,3 +1,31 @@
 .menu-btn {
-	font-size: rem(30px);
+	float: right;
+	svg {
+		width: 40px;
+		height: 40px;
+	}
+}
+.btn {
+	color: $primary;
+	background-color: transparent;
+	border: 2px $primary solid;
+	border-radius: 5px;
+	font-size: rem(14px);
+	font-weight: $bold;
+	text-transform: uppercase;
+	&:hover {
+		color: #fff;
+		background-color: $primary;
+	}
+}
+.btn-default {
+	background-color: $primary;
+	color: #fff;
+	&:hover {
+		background-color: darken($primary, 10%);
+		border-color: darken($primary, 10%);
+	}
+}
+.btn-lg {
+	font-size: rem(16px);
 }

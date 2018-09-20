@@ -6,42 +6,41 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<title>Letterhead Style Guide</title>
-	<!-- Custom styles for this template -->
 	<link rel="stylesheet" href="https://cdn.rawgit.com/luizbills/feather-icon-font/v4.7.0/dist/feather.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<!-- Custom styles for this template -->
 	<link href="public/css/app.css" rel="stylesheet">
 </head>
 <body>
-	<div id="wrapper">
+	<div id="wrapper" class="toggled">
 		<div id="sidebar-wrapper">
 			<div id="sidebar">
 				<nav class="navbar" role="navigation">
 					<ul class="sidebar-nav">
 						<li class="sidebar-brand">
 							<a href="index.html">
-								Better Car People Logo
+								<img src="resources/images/logo.png" width="200" height="73" alt=""/>
 							</a>
 						</li>
 								<li>
-									<a href="#type">Typography</a>
+									<a href="#type"><i data-feather="bold"></i> Typography</a>
 								</li>
 								<li>
-									<a href="#color">Colors</a>
+									<a href="#color"><i data-feather="droplet"></i> Colors</a>
 								</li>
 								<li>
-									<a href="#button">Buttons</a>
+									<a href="#button"><i data-feather="square"></i> Buttons</a>
 								</li>
 								<li>
-									<a href="#icon">Icons</a>
+									<a href="#icon"><i data-feather="feather"></i> Icons</a>
 								</li>
 								<li>
-									<a href="#item">Items</a>
+									<a href="#item"><i data-feather="star"></i> Items</a>
 								</li>
 								<li>
-									<a href="#mixin">Mixins</a>
+									<a href="#mixin"><i data-feather="filter"></i> Mixins</a>
 								</li>
 								<li>
-									<a href="#size">Sizing and Spacing</a>
+									<a href="#size"><i data-feather="maximize"></i> Sizing and Spacing</a>
 								</li>
 							</ul>
 				</nav>
@@ -55,7 +54,7 @@
 							<h1>Letterhead Style Guide</h1>
 						</div>
 						<div class="col-sm-1">
-							<a href="#menu-toggle" class="menu-btn" id="menu-toggle"><i class="fas fa-bars"></i></a>
+							<a href="#menu-toggle" class="menu-btn" id="menu-toggle"><i data-feather="menu"></i></a>
 						</div>
 					</div>
 					<div id="type" class="row">
@@ -213,9 +212,9 @@
 						<div class="col-sm-12">
 							<div class="row">
 								<div class="col-sm-3">
-									<div class="color-swatch border">
+									<div class="color-swatch">
 										<div class="top-swatch primary"></div>
-										<div class="swatch-detail">
+										<div class="swatch-detail border-no-top">
 											<h3>Primary</h3>
 											<h4>background-color: #42a0e5;</h4>
 											<h4>Hex: #42a0e5</h4>
@@ -225,9 +224,9 @@
 									</div>
 								</div>
 								<div class="col-sm-3">
-									<div class="color-swatch border">
+									<div class="color-swatch">
 										<div class="top-swatch secondary"></div>
-										<div class="swatch-detail">
+										<div class="swatch-detail border-no-top">
 											<h3>Secondary</h3>
 											<h4>background-color: #26313a;</h4>
 											<h4>Hex: #26313a</h4>
@@ -239,9 +238,9 @@
 							</div>
 							<div class="row">
 								<div class="col-sm-3">
-									<div class="color-swatch border">
+									<div class="color-swatch">
 										<div class="top-swatch dark"></div>
-										<div class="swatch-detail">
+										<div class="swatch-detail border-no-top">
 											<h3>Dark</h3>
 											<h4>background-color: #0c1620;</h4>
 											<h4>Hex: #0c1620</h4>
@@ -251,9 +250,9 @@
 									</div>
 								</div>
 								<div class="col-sm-3">
-									<div class="color-swatch border">
+									<div class="color-swatch">
 										<div class="top-swatch dark-gray"></div>
-										<div class="swatch-detail">
+										<div class="swatch-detail border-no-top">
 											<h3>Dark Gray</h3>
 											<h4>background-color: #7a7a7a;</h4>
 											<h4>Hex: #7a7a7a</h4>
@@ -263,9 +262,9 @@
 									</div>
 								</div>
 								<div class="col-sm-3">
-									<div class="color-swatch border">
+									<div class="color-swatch">
 										<div class="top-swatch gray"></div>
-										<div class="swatch-detail">
+										<div class="swatch-detail border-no-top">
 											<h3>Gray</h3>
 											<h4>background-color: #c0c9d7;</h4>
 											<h4>Hex: #c0c9d7</h4>
@@ -275,9 +274,9 @@
 									</div>
 								</div>
 								<div class="col-sm-3">
-									<div class="color-swatch border">
+									<div class="color-swatch">
 										<div class="top-swatch light-gray"></div>
-										<div class="swatch-detail">
+										<div class="swatch-detail border-no-top">
 											<h3>Light Gray</h3>
 											<h4>background-color: #ebf0f4;</h4>
 											<h4>Hex: #ebf0f4</h4>
@@ -289,9 +288,9 @@
 							</div>
 							<div class="row">
 								<div class="col-sm-3">
-									<div class="color-swatch border">
+									<div class="color-swatch">
 										<div class="top-swatch lighter-gray"></div>
-										<div class="swatch-detail">
+										<div class="swatch-detail border-no-top">
 											<h3>Lighter Gray</h3>
 											<h4>background-color: #f0f4f7;</h4>
 											<h4>Hex: #f0f4f7</h4>
@@ -303,9 +302,9 @@
 							</div>
 							<div class="row">
 								<div class="col-sm-3">
-									<div class="color-swatch border">
+									<div class="color-swatch">
 										<div class="top-swatch success"></div>
-										<div class="swatch-detail">
+										<div class="swatch-detail border-no-top">
 											<h3>Success</h3>
 											<h4>background-color: #95cf54;</h4>
 											<h4>Hex: #95cf54</h4>
@@ -315,9 +314,9 @@
 									</div>
 								</div>
 								<div class="col-sm-3">
-									<div class="color-swatch border">
+									<div class="color-swatch">
 										<div class="top-swatch warning"></div>
-										<div class="swatch-detail">
+										<div class="swatch-detail border-no-top">
 											<h3>Warning</h3>
 											<h4>background-color: #ebe48f;</h4>
 											<h4>Hex: #ebe48f</h4>
@@ -327,9 +326,9 @@
 									</div>
 								</div>
 								<div class="col-sm-3">
-									<div class="color-swatch border">
+									<div class="color-swatch">
 										<div class="top-swatch danger"></div>
-										<div class="swatch-detail">
+										<div class="swatch-detail border-no-top">
 											<h3>Danger</h3>
 											<h4>background-color: #ff485f;</h4>
 											<h4>Hex: #ff485f</h4>
@@ -341,9 +340,9 @@
 							</div>
 							<div class="row">
 								<div class="col-sm-3">
-									<div class="color-swatch border">
+									<div class="color-swatch">
 										<div class="top-swatch panel-border"></div>
-										<div class="swatch-detail">
+										<div class="swatch-detail border-no-top">
 											<h3>Panel Border</h3>
 											<h4>background-color: #e5e6eb;</h4>
 											<h4>Hex: #e5e6eb</h4>
@@ -353,9 +352,9 @@
 									</div>
 								</div>
 								<div class="col-sm-3">
-									<div class="color-swatch border">
-										<div class="top-swatch panel-bg"></div>
-										<div class="swatch-detail">
+									<div class="color-swatch">
+										<div class="top-swatch panel-bg border"></div>
+										<div class="swatch-detail border-no-top">
 											<h3>Panel Background</h3>
 											<h4>background-color: #ffffff;</h4>
 											<h4>Hex: #ffffff</h4>
@@ -375,7 +374,7 @@
 						<div class="col-sm-12">
 							<div class="row">
 								<div class="col-sm-4">
-									<button class="btn btn-default">
+									<button class="btn">
 										Button
 									</button>
 								</div>
@@ -385,7 +384,7 @@
 									</button>
 								</div>
 								<div class="col-sm-4">
-									<button class="btn btn-lg">
+									<button class="btn btn-default btn-lg">
 										Button Large
 									</button>
 								</div>
@@ -396,6 +395,66 @@
 					<div id="icon" class="row">
 						<div class="col-sm-12">
 							<h1>Icons</h1>
+							<div class="row icons">
+								<div class="col-sm-3 icon-item">
+									<i data-feather="home"></i>
+									<h4>Dashboard</h4>
+									<h5>home</h5>
+									<p>&lt;i data-feather="home"&gt;&lt;/i&gt;</p>
+								</div>
+								<div class="col-sm-3 icon-item">
+									<i data-feather="navigation"></i>
+									<h4>Navigation</h4>
+									<h5>navigation</h5>
+									<p>&lt;i data-feather="navigation"&gt;&lt;/i&gt;</p>
+								</div>
+								<div class="col-sm-3 icon-item">
+									<i data-feather="file"></i>
+									<h4>Pages</h4>
+									<h5>file</h5>
+									<p>&lt;i data-feather="file"&gt;&lt;/i&gt;</p>
+								</div>
+								<div class="col-sm-3 icon-item">
+									<i data-feather="layout"></i>
+									<h4>Templates</h4>
+									<h5>layout</h5>
+									<p>&lt;i data-feather="layout"&gt;&lt;/i&gt;</p>
+								</div>
+							</div>
+							<div class="row icons">
+								<div class="col-sm-3 icon-item">
+									<i data-feather="package"></i>
+									<h4>Themes</h4>
+									<h5>package</h5>
+									<p>&lt;i data-feather="package"&gt;&lt;/i&gt;</p>
+								</div>
+								<div class="col-sm-3 icon-item">
+									<i data-feather="message-square"></i>
+									<h4>Blog</h4>
+									<h5>message-square</h5>
+									<p>&lt;i data-feather="message-square"&gt;&lt;/i&gt;</p>
+								</div>
+								<div class="col-sm-3 icon-item">
+									<i data-feather="image"></i>
+									<h4>Media</h4>
+									<h5>image</h5>
+									<p>&lt;i data-feather="image"&gt;&lt;/i&gt;</p>
+								</div>
+								<div class="col-sm-3 icon-item">
+									<i data-feather="mail"></i>
+									<h4>Forms</h4>
+									<h5>mail</h5>
+									<p>&lt;i data-feather="mail"&gt;&lt;/i&gt;</p>
+								</div>
+							</div>
+							<div class="row justify-content-sm-center">
+								<div class="col-sm-11 icon-detail">
+									<p>&lt;link rel="stylesheet" href="https://cdn.rawgit.com/luizbills/feather-icon-font/v4.7.0/dist/feather.css"&gt;</p>
+									<p>&lt;script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"&gt;</script></p>
+									<p>Initialize in <strong>app.js</strong> <code>feather.replace();</code></p>
+								</div>
+							</div>
+							<div class="divider"></div>
 						</div>
 					</div>
 					<div id="item" class="row">
@@ -416,6 +475,8 @@
 						</div>
 						<div class="col-sm-12">
 							<h4>$body-bg: #F0F4F7;</h4>
+							<h4>$font-size-base: rem(15px);</h4>
+							<h4>$font-size-sm: rem(13px);</h4>
 							<h4>$normal: 400;</h4>
 							<h4>$bold: 900;</h4>
 							<h4>
@@ -432,6 +493,6 @@
 		</div>
 	</div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 <script src="public/js/app.js"></script>
-<script src="public/js/sticky-sidebar.js"></script>
 </html>
