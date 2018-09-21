@@ -3,6 +3,21 @@ import 'bootstrap';
 
 $(document).ready(function($) {
 
+	//Modal
+	$('#myModal').on('shown.bs.modal', function() {
+		$('#myInput').focus()
+	});
+
+	//Dropdown on Click
+	function dropDown() {
+		var x = document.getElementById("sub-menu");
+		if (x.className.indexOf("show") == -1) {
+			x.className += " show";
+		} else {
+			x.className = x.className.replace(" show", "");
+		}
+	}
+
 	//Simple Sidebar Toggle
 	$("#menu-toggle").click(function (e) {
 		e.preventDefault();

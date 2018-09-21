@@ -6,26 +6,19 @@
 	}
 }
 .btn {
-	color: $primary;
-	background-color: transparent;
-	border: 2px $primary solid;
-	border-radius: 5px;
-	font-size: rem(14px);
-	font-weight: $bold;
 	text-transform: uppercase;
-	&:hover {
-		color: #fff;
-		background-color: $primary;
-	}
+	font-weight: $bold;
+	border-radius: rem(5px);
 }
-.btn-default {
-	background-color: $primary;
-	color: #fff;
-	&:hover {
-		background-color: darken($primary, 10%);
-		border-color: darken($primary, 10%);
+.close {
+	color: $dark;
+	border: none;
+	background-color: transparent;
+	font-size: rem(25px);
+	&:focus {
+		outline: none;
 	}
-}
-.btn-lg {
-	font-size: rem(16px);
+	&:hover {
+		color: lighten($dark, 10%);
+	}
 }

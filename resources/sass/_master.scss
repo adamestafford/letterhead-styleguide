@@ -9,3 +9,14 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+a {
+	transition: background-color ease 0.2s;
+}
+.show {
+	display: block;
+	opacity: 1;
+}

@@ -1,8 +1,4 @@
 /* Base */
-ul {
-	list-style: none;
-	padding-left: 0;
-}
 .border {
 	border: solid 1px #ccc;
 	padding: 15px;
@@ -46,11 +42,6 @@ ul {
 	text-align: center;
 	margin-bottom: 60px;
 }
-.hero {
-	font-size: 75px;
-	font-weight: 900;
-	font-family: 'Muli', sans-serif;
-}
 #type .type-item {
 	padding: 15px 0;
 }
@@ -65,23 +56,11 @@ ul {
 .fonts p {
 	margin-bottom: 0;
 }
-/* Navigation */
-.navbar, .navbar-inverse {
-	border-radius: 0;
-	border: none;
-	margin-bottom: 0;
-	min-height: 80px;
+h4 {
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
-.nav li {
-	display: block;
-	color: white;
-}
-.navbar-inverse .navbar-nav > li > a {
-	color: #333;
-}
-.navbar-inverse .navbar-nav li a:hover {
-	height: 100%;
-}
+
 #sidebar {
 	.sidebar-brand {
 		margin-top: 35px;
@@ -100,9 +79,10 @@ ul {
 	}
 	.icons {
 		.icon-item {
-			margin: 0 auto;
+			margin: 0 auto 30px auto;
 			text-align: center;
 			h4 {
+				margin-top: 8px;
 				margin-bottom: 15px;
 			}
 			svg {
