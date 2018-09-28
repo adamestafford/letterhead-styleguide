@@ -1,7 +1,14 @@
+#sidebar-wrapper-back {
+	position: fixed;
+	top: 0;
+	bottom: -120px;
+	z-index: 1;
+	width: 250px;
+	background: $secondary;
+}
 #sidebar-wrapper {
-	background: $dark;
+	background: $secondary;
 	#sidebar {
-		background: $dark;
 		padding: 0;
 	}
 }

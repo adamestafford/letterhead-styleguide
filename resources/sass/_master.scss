@@ -1,6 +1,7 @@
 body {
-	background: $body-bg;
+	background: $light-gray;
 	font-family: $font-family-base;
+	color: $dark;
 }
 html,
 body {
@@ -14,9 +15,9 @@ ul {
 	padding-left: 0;
 }
 a {
-	transition: background-color ease 0.2s;
+	text-decoration: none;
+	color: inherit;
 }
-.show {
-	display: block;
-	opacity: 1;
+:focus {
+	outline: transparent;
 }

@@ -1,10 +1,6 @@
-//@import "~bootstrap/scss/bootstrap";
-@import "~bootstrap/scss/bootstrap-reboot";
-@import "~bootstrap/scss/modal";
-@import "~bootstrap/scss/buttons";
-@import "~bootstrap/scss/utilities/flex";
-@import "~bootstrap/scss/grid";
+@import '~bootstrap-4-grid';
 @import "~sass-rem/rem";
+@import "variables";
 @import "fonts";
 @import "mixins";
 @import "colors";
@@ -13,5 +9,7 @@
 @import "buttons";
 @import "navigation";
 @import "modal";
+@import "overlay";
+@import "forms";
 @import "master";
 @import "style-guide";

@@ -14,11 +14,15 @@
 	height: 2px;
 	border-top: solid 2px #ccc;
 }
-/* Components */
+.swatch-picker {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+}
 #color,
 #icon,
 #button,
-#type,
+#component,
 #mixin {
 	margin-bottom: 30px;
 }
@@ -70,7 +74,7 @@ h4 {
 #icon {
 	.icon-detail {
 		padding: 30px;
-		background: theme-color("gray-200");
+		background: $light-gray;
 		margin-top: 30px;
 		margin-bottom: 30px;
 		p:last-child {
@@ -100,6 +104,40 @@ h4 {
 		}
 	}
 }
-@media(max-width: 768px) {
-
+// Colors
+.primary {
+	background-color: $primary;
+}
+.secondary {
+	background-color: $secondary;
+}
+.dark {
+	background-color: $dark;
+}
+.dark-gray {
+	background-color: $dark-gray;
+}
+.gray {
+	background-color: $gray;
+}
+.light-gray {
+	background-color: $light-gray;
+}
+.lighter-gray {
+	background-color: $lighter-gray;
+}
+.success {
+	background-color: #95cf54;
+}
+.warning {
+	background-color: #ebe48f;
+}
+.danger {
+	background-color: #ff485f;
+}
+.panel-border {
+	background-color: #e5e6eb;
+}
+.panel-bg {
+	background-color: #ffffff;
 }

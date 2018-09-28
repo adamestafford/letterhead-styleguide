@@ -1,0 +1,60 @@
+.form-header {
+	padding: 15px;
+	border-bottom: solid 1px $light-gray;
+	margin-bottom: 20px;
+}
+.form-footer {
+	padding: 15px;
+	border-top: solid 1px $light-gray;
+	margin-bottom: 20px;
+}
+form {
+	padding-left: 20px;
+	padding-right: 20px;
+	.form-container  {
+		padding: 20px;
+		background: $light-gray;
+	}
+	.form-group {
+		width: 100%;
+		display: block;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		label {
+			color: $dark-gray;
+			font-weight: $bold;
+			font-size: rem(14px);
+			text-transform: uppercase;
+			margin-bottom: 8px;
+			display: block;
+		}
+		input {
+			width: 100%;
+			padding: 15px;
+			font-size: rem(16px);
+			border: none;
+			&::placeholder {
+				color: $dark;
+			}
+		}
+		textarea {
+			width: 100%;
+			padding: 15px;
+			border: none;
+			font-size: rem(16px);
+			resize: none;
+			line-height: 1.4;
+			&::placeholder {
+				color: $dark;
+				font-size: rem(16px);
+			}
+		}
+		select {
+			width: 100%;
+			height: calc(2.25rem + 2px);
+			border: none;
+			font-size: rem(16px);
+			color: $dark;
+		}
+	}
+}

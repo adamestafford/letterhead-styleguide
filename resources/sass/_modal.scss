@@ -1,6 +1,6 @@
 .modal-open {
 	.modal-backdrop {
-		background: $dark;
+		//background: $dark;
 	}
 	.modal-backdrop.show {
 		opacity: 0.8;
@@ -10,7 +10,7 @@
 			.modal-content {
 				border-radius: 0;
 				.modal-header {
-					background: theme-color("gray-400");
+					//background: theme-color("gray-400");
 					h4 {
 						margin-top: 0;
 					}

@@ -18,37 +18,60 @@
 					<ul class="sidebar-nav">
 						<li class="sidebar-brand">
 							<a href="index.html">
-								<img class="img-fluid" src="resources/images/logo.png" width="200" height="73" alt=""/>
+								<img src="resources/images/logo.png" width="200" height="73" alt=""/>
 							</a>
 						</li>
 						<li>
-							<a href="#type"><i data-feather="type"></i> Typography</a>
+							<a href="#type"><i data-feather="type"></i>
+								<span class="menu-name">Typography</span>
+							</a>
 						</li>
 						<li>
-							<a href="#color"><i data-feather="droplet"></i> Colors</a>
+							<a href="#color"><i data-feather="droplet"></i>
+								<span class="menu-name">Colors</span>
+							</a>
 						</li>
 						<li>
-							<a href="#button"><i data-feather="square"></i> Buttons</a>
+							<a href="#button"><i data-feather="square"></i>
+								<span class="menu-name">Buttons</span>
+							</a>
 						</li>
 						<li>
-							<a href="#icon"><i data-feather="feather"></i> Icons</a>
+							<a href="#icon"><i data-feather="feather"></i>
+								<span class="menu-name">Icons</span>
+							</a>
 						</li>
-						<li class="has-children">
-							<a href="#"><i data-feather="star"></i> Items</a>
-							<ul id="sub-menu">
+						<li>
+							<a href="#" class="submenu-trigger"><i data-feather="star"></i>
+								<span class="menu-name">Components</span>
+							</a>
+							<ul class="sub-menu">
 								<li>
-									<a href="#item">Lists</a>
+									<a href="#list">Lists</a>
 								</li>
 								<li>
-									<a href="#">Modal</a>
+									<a href="#radio">Radio</a>
+								</li>
+								<li>
+									<a href="#overlay">Edit Overlay</a>
+								</li>
+								<li>
+									<a href="#form">Forms</a>
+								</li>
+								<li>
+									<a href="#modal">Modal</a>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<a href="#mixin"><i data-feather="filter"></i> Mixins</a>
+							<a href="#mixin"><i data-feather="filter"></i>
+								<span class="menu-name">Mixins</span>
+							</a>
 						</li>
 						<li>
-							<a href="#size"><i data-feather="maximize"></i> Sizing and Spacing</a>
+							<a href="#size"><i data-feather="maximize"></i>
+								<span class="menu-name">Sizing and Spacing</span>
+							</a>
 						</li>
 					</ul>
 				</nav>
@@ -58,11 +81,13 @@
 			<div class="container-fluid">
 				<div id="main">
 					<div class="row">
-						<div class="col-sm-11 title">
-							<h1>Letterhead Style Guide</h1>
-						</div>
-						<div class="col-sm-1">
+						<div class="col-xs-1">
 							<a href="#menu-toggle" class="menu-btn" id="menu-toggle"><i data-feather="menu"></i></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 title">
+							<h1>Letterhead Style Guide</h1>
 						</div>
 					</div>
 					<div id="type" class="row">
@@ -74,7 +99,7 @@
 								<div class="col-sm-3">
 									<h4>Hero Title</h4>
 									<div class="styles">
-										<p>text-color: <span></span>;</p>
+										<p>text-color: <span>#0c1620</span>;</p>
 										<p>font-family: <span>'Muli', sans-serif</span>;</p>
 										<p>font-size: <span>rem(60px)</span>;</p>
 										<p>font-weight: <span>$bold</span>;</p>
@@ -85,13 +110,20 @@
 								</div>
 								<div class="col-sm-2">
 									<h4>Text Colors</h4>
+									<div class="swatch-picker dark"></div>
+									<div class="swatch-picker gray"></div>
+									<div class="swatch-picker white border"></div>
+									<div class="swatch-picker light-gray"></div>
+									<div class="swatch-picker success"></div>
+									<div class="swatch-picker warning"></div>
+									<div class="swatch-picker danger"></div>
 								</div>
 							</div>
 							<div class="row type-item">
 								<div class="col-sm-3">
 									<h4>Heading 1</h4>
 									<div class="styles">
-										<p>text-color: <span></span>;</p>
+										<p>text-color: <span>#0c1620</span>;</p>
 										<p>font-family: <span>'Muli', sans-serif</span>;</p>
 										<p>font-size: <span>rem(36px)</span>;</p>
 										<p>font-weight: <span>$normal</span>;</p>
@@ -102,13 +134,20 @@
 								</div>
 								<div class="col-sm-2">
 									<h4>Text Colors</h4>
+									<div class="swatch-picker dark"></div>
+									<div class="swatch-picker gray"></div>
+									<div class="swatch-picker white border"></div>
+									<div class="swatch-picker light-gray"></div>
+									<div class="swatch-picker success"></div>
+									<div class="swatch-picker warning"></div>
+									<div class="swatch-picker danger"></div>
 								</div>
 							</div>
 							<div class="row type-item">
 								<div class="col-sm-3">
 									<h4>Heading 2</h4>
 									<div class="styles">
-										<p>text-color: <span></span>;</p>
+										<p>text-color: <span>#0c1620</span>;</p>
 										<p>font-family: <span>'Muli', sans-serif</span>;</p>
 										<p>font-size: <span>rem(26px)</span>;</p>
 										<p>font-weight: <span>$normal</span>;</p>
@@ -119,13 +158,20 @@
 								</div>
 								<div class="col-sm-2">
 									<h4>Text Colors</h4>
+									<div class="swatch-picker dark"></div>
+									<div class="swatch-picker gray"></div>
+									<div class="swatch-picker white border"></div>
+									<div class="swatch-picker light-gray"></div>
+									<div class="swatch-picker success"></div>
+									<div class="swatch-picker warning"></div>
+									<div class="swatch-picker danger"></div>
 								</div>
 							</div>
 							<div class="row type-item">
 								<div class="col-sm-3">
 									<h4>Heading 3</h4>
 									<div class="styles">
-										<p>text-color: <span></span>;</p>
+										<p>text-color: <span>#0c1620</span>;</p>
 										<p>font-family: <span>'Muli', sans-serif</span>;</p>
 										<p>font-size: <span>rem(20px)</span>;</p>
 										<p>font-weight: <span>$bold</span>;</p>
@@ -136,13 +182,20 @@
 								</div>
 								<div class="col-sm-2">
 									<h4>Text Colors</h4>
+									<div class="swatch-picker dark"></div>
+									<div class="swatch-picker gray"></div>
+									<div class="swatch-picker white border"></div>
+									<div class="swatch-picker light-gray"></div>
+									<div class="swatch-picker success"></div>
+									<div class="swatch-picker warning"></div>
+									<div class="swatch-picker danger"></div>
 								</div>
 							</div>
 							<div class="row type-item">
 								<div class="col-sm-3">
 									<h4>Heading 4</h4>
 									<div class="styles">
-										<p>text-color: <span></span>;</p>
+										<p>text-color: <span>#0c1620</span>;</p>
 										<p>font-family: <span>'Muli', sans-serif</span>;</p>
 										<p>font-size: <span>rem(20px)</span>;</p>
 										<p>font-weight: <span>$normal</span>;</p>
@@ -153,13 +206,20 @@
 								</div>
 								<div class="col-sm-2">
 									<h4>Text Colors</h4>
+									<div class="swatch-picker dark"></div>
+									<div class="swatch-picker gray"></div>
+									<div class="swatch-picker white border"></div>
+									<div class="swatch-picker light-gray"></div>
+									<div class="swatch-picker success"></div>
+									<div class="swatch-picker warning"></div>
+									<div class="swatch-picker danger"></div>
 								</div>
 							</div>
 							<div class="row type-item">
 								<div class="col-sm-3">
 									<h4>Heading 5</h4>
 									<div class="styles">
-										<p>text-color: <span></span>;</p>
+										<p>text-color: <span>#0c1620</span>;</p>
 										<p>font-family: <span>'Muli', sans-serif</span>;</p>
 										<p>font-size: <span>rem(16px)</span>;</p>
 										<p>font-weight: <span>$normal</span>;</p>
@@ -170,13 +230,20 @@
 								</div>
 								<div class="col-sm-2">
 									<h4>Text Colors</h4>
+									<div class="swatch-picker dark"></div>
+									<div class="swatch-picker gray"></div>
+									<div class="swatch-picker white border"></div>
+									<div class="swatch-picker light-gray"></div>
+									<div class="swatch-picker success"></div>
+									<div class="swatch-picker warning"></div>
+									<div class="swatch-picker danger"></div>
 								</div>
 							</div>
 							<div class="row type-item">
 								<div class="col-sm-3">
 									<h4>Paragraph</h4>
 									<div class="styles">
-										<p>text-color: <span></span>;</p>
+										<p>text-color: <span>#0c1620</span>;</p>
 										<p>font-family: <span>$font-family-base</span>;</p>
 										<p>font-size: <span>rem(16px)</span>;</p>
 										<p>font-weight: <span>$normal</span>;</p>
@@ -187,13 +254,20 @@
 								</div>
 								<div class="col-sm-2">
 									<h4>Text Colors</h4>
+									<div class="swatch-picker dark"></div>
+									<div class="swatch-picker gray"></div>
+									<div class="swatch-picker white border"></div>
+									<div class="swatch-picker light-gray"></div>
+									<div class="swatch-picker success"></div>
+									<div class="swatch-picker warning"></div>
+									<div class="swatch-picker danger"></div>
 								</div>
 							</div>
 							<div class="row type-item">
 								<div class="col-sm-3">
 									<h4>Paragraph Small</h4>
 									<div class="styles">
-										<p>text-color: <span></span>;</p>
+										<p>text-color: <span>#0c1620</span>;</p>
 										<p>font-family: <span>$font-family-base</span>;</p>
 										<p>font-size: <span>rem(15px)</span>;</p>
 										<p>font-weight: <span>$normal</span>;</p>
@@ -208,6 +282,13 @@
 								</div>
 								<div class="col-sm-2">
 									<h4>Text Colors</h4>
+									<div class="swatch-picker dark"></div>
+									<div class="swatch-picker gray"></div>
+									<div class="swatch-picker white border"></div>
+									<div class="swatch-picker light-gray"></div>
+									<div class="swatch-picker success"></div>
+									<div class="swatch-picker warning"></div>
+									<div class="swatch-picker danger"></div>
 								</div>
 							</div>
 							<div class="divider"></div>
@@ -498,10 +579,10 @@
 							</div>
 							<div class="row icons">
 								<div class="col-sm-3 icon-item">
-									<i data-feather="user"></i>
-									<h4>User</h4>
-									<h5>user</h5>
-									<p>&lt;i data-feather="user"&gt;&lt;/i&gt;</p>
+									<i data-feather="chevron-up"></i>
+									<h4>Up</h4>
+									<h5>chevron-up</h5>
+									<p>&lt;i data-feather="chevron-up"&gt;&lt;/i&gt;</p>
 								</div>
 								<div class="col-sm-3 icon-item">
 									<i data-feather="chevron-down"></i>
@@ -581,6 +662,12 @@
 									<h5>arrow-left</h5>
 									<p>&lt;i data-feather="arrow-left"&gt;&lt;/i&gt;</p>
 								</div>
+								<div class="col-sm-3 icon-item">
+									<i data-feather="user"></i>
+									<h4>User</h4>
+									<h5>user</h5>
+									<p>&lt;i data-feather="user"&gt;&lt;/i&gt;</p>
+								</div>
 							</div>
 							<div class="row justify-content-sm-center">
 								<div class="col-sm-11 icon-detail">
@@ -592,42 +679,108 @@
 							<div class="divider"></div>
 						</div>
 					</div>
-					<div id="item" class="row">
+					<div class="row">
 						<div class="col-sm-12">
-							<h1>Items</h1>
+							<h1>Components</h1>
 						</div>
 						<div class="col-sm-12">
+							<div id="list">
+								<h4>List</h4>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div id="radio">
+								<h4>Radio</h4>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div id="overlay">
+								<h4>Edit Overlay</h4>
+							</div>
 							<div class="row">
-								<div class="col-sm-4">
-									<h4>Select</h4>
+								<div class="col-sm-2">
+									<div class="edit-overlay">
+										<i data-feather="chevron-up"></i>
+										<i data-feather="chevron-down"></i>
+										<i data-feather="edit"></i>
+										<i data-feather="trash"></i>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-12">
-							<h4>Modals</h4>
+							<div id="form">
+								<h4>Forms</h4>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-header">
+											<h5>Form</h5>
+											<button type="button" class="btn btn-outline-primary"><a href="#">Reset</a></button>
+											<button type="button" class="btn btn-primary"><a href="#">Save</a></button>
+										</div>
+										<form action="#" method="#">
+											<div class="form-container">
+												<div class="form-group">
+													<label for="exampleInputEmail1">Email Address</label>
+													<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+												</div>
+												<div class="form-group">
+													<label for="exampleInputPassword1">Password</label>
+													<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+												</div>
+												<div class="form-group">
+													<label for="exampleSelect">Select A Group</label>
+													<select name="" id="exampleSelect">
+														<option disabled selected value> -- make your choice -- </option>
+														<option>Pink Floyd</option>
+														<option>The Beatles</option>
+														<option>ZZ Top</option>
+														<option>The Allman Bros.</option>
+														<option>Chicago</option>
+													</select>
+												</div>
+												<div class="form-group">
+													<label for="exampleInputText">Message</label>
+													<textarea class="form-control" id="exampleInputText" rows="10" placeholder="Your Cool Message Goes Here"></textarea>
+												</div>
+												<button type="submit" class="btn btn-primary">Submit</button>
+											</div>
+										</form>
+										<div class="form-footer">
+											<button type="submit" class="btn btn-outline-primary">Reset</button>
+											<button type="submit" class="btn btn-primary">Save</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div id="modal">
+								<h4>Modals</h4>
 								<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Save</button>
+							</div>
 						</div>
 						<!-- The Modal -->
-						<div class="modal" id="myModal">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<!-- Modal Header -->
-									<div class="modal-header">
-										<h4 class="modal-title">Save Template</h4>
-										<button type="button" class="close" data-dismiss="modal"><i data-feather="x"></i></button>
-									</div>
-									<!-- Modal body -->
-									<div class="modal-body">
-										Are you sure you want to save your Template?
-									</div>
-									<!-- Modal footer -->
-									<div class="modal-footer">
-										<button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
-										<button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
-									</div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="modal" id="myModal">-->
+							<!--<div class="modal-dialog">-->
+								<!--<div class="modal-content">-->
+									<!--&lt;!&ndash; Modal Header &ndash;&gt;-->
+									<!--<div class="modal-header">-->
+										<!--<h4 class="modal-title">Save Template</h4>-->
+										<!--<button type="button" class="close" data-dismiss="modal"><i data-feather="x"></i></button>-->
+									<!--</div>-->
+									<!--&lt;!&ndash; Modal body &ndash;&gt;-->
+									<!--<div class="modal-body">-->
+										<!--Are you sure you want to save your Template?-->
+									<!--</div>-->
+									<!--&lt;!&ndash; Modal footer &ndash;&gt;-->
+									<!--<div class="modal-footer">-->
+										<!--<button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>-->
+										<!--<button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>-->
+									<!--</div>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 						<div class="col-sm-12">
 							<div class="divider"></div>
 						</div>

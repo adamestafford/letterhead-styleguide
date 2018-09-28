@@ -1,18 +1,23 @@
 .navbar {
-	padding: 0;
 	ul {
 		li {
 			a {
+				margin-left: 24px;
+				display: flex;
+				align-items: center;
 				color: #fff;
-				font-size: $font-size-base;
+				font-size: rem(15px);
 				svg {
 					width: 18px;
 					height: 18px;
 					position: relative;
-					bottom: 3px;
 					margin-right: 8px;
 				}
+				.menu-name {
+					text-indent: 0;
+				}
 				&:hover {
+					background: transparent;
 					svg {
 						color: $primary;
 					}
@@ -23,11 +28,37 @@
 				opacity: 0;
 				li {
 					a {
-						color: #fff;
-						padding-left: 30px;
+						margin-left: 33px;
+						display: flex;
+						align-items: center;
+						font-size: rem(13px);
+						color: #c0c9d7;
+					}
+				}
+				&.show {
+					display: block;
+					opacity: 1;
+				}
+			}
+			&.active {
+				border-right: $primary solid 3px;
+			}
+			&.sidebar-brand {
+				a {
+					margin-left: 0;
+					img {
+						margin: 0 auto;
 					}
 				}
 			}
 		}
 	}
 }
+#menu-toggle {
+	display: none;
+}
+//@include media-breakpoint-down(sm) {
+//	#menu-toggle {
+//		display: block;
+//	}
+//}
