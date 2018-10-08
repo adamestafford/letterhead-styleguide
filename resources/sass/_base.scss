@@ -1,0 +1,71 @@
+body {
+	background: $light-gray;
+	font-family: $font-family-base;
+	color: $dark;
+}
+html,
+body {
+	height: 100%;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin-top:0;
+	margin-bottom: 1.5em;
+	font-size: $font-size-base;
+	&> li {
+		display: block;
+		ul{
+			&> li{
+				font-size: $font-size-sm;
+			}
+		}
+	}
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+:focus {
+	outline: transparent;
+}
+
+h1 {
+	font-size: rem(36px);
+}
+h2 {
+	font-size: rem(26px);
+}
+h3 {
+	font-size: rem(20px);
+	font-weight: $bold;
+}
+h4 {
+	font-size: rem(20px);
+}
+h5 {
+	font-size: rem(16px);
+}
+p {
+	font-size: rem(16px);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Muli', sans-serif;
+	font-style: normal;
+}
+h1,
+h2,
+h4,
+h5 {
+	font-weight: $normal;
+}
+small {
+	font-size: rem(15px);
+}

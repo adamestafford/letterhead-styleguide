@@ -1,0 +1,135 @@
+.c-brand {
+	width: 100%;
+	display: block;
+	padding: 1.5rem;
+	text-align: center;
+	img {
+		width: 100%;
+	}
+}
+.c-nav-menu {
+	& > li {
+		padding-left: 1.5rem;
+		color: #fff;
+		&:hover {
+			& > a {
+				border-right: 3px solid $primary;
+				@include transition(border-right .25s);
+				svg {
+					color: $primary;
+				}
+				div {
+					svg {
+						color: #fff;
+					}
+				}
+			}
+		}
+		a {
+			display: flex;
+			align-items: center;
+			line-height: 18px;
+			color: #fff;
+			padding: rem(12px);
+			padding-left: 0;
+			padding-right: 0;
+			border-right: 3px solid $secondary;
+			div {
+				position: absolute;
+				right: 20px;
+				svg {
+					width: 15px;
+					height: 15px;
+				}
+			}
+			svg {
+				width: 17px;
+				height: 17px;
+				//position: relative;
+				margin-right: 8px;
+				vertical-align: bottom;
+				@include transition(transform .25s);
+			}
+			&.active {
+				border-right: 3px solid $primary;
+				div {
+					svg {
+						transform: rotate(180deg)
+					}
+				}
+				& ~ ul {
+					display: block;
+					margin-bottom: 0.5rem;
+					li {
+						border-right: 3px solid $primary;
+						a.active {
+							border-right: 0px solid $primary;
+						}
+						ul {
+							li {
+								border-right: 0px solid $primary;
+							}
+						}
+					}
+				}
+			}
+		}
+		& > ul {
+			padding: 0 0 0 rem(25px);
+			margin: 0;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+			position: relative;
+			& > li {
+				a {
+					color: $gray;
+					padding: rem(12px);
+					padding-left: 0;
+					&:hover {
+						color: #fff;
+					}
+				}
+				//Second Level
+				& > ul {
+					padding: 0 0 0 rem(25px);
+					margin: 0;
+					max-height: 0;
+					overflow: hidden;
+					transition: max-height 0.2s ease-out;
+					position: relative;
+					li {
+						a {
+							&.active {
+								border-right: 3px solid $primary;
+								div {
+									svg {
+										transform: rotate(180deg)
+									}
+								}
+								& ~ ul {
+									//display: block;
+									margin-bottom: 0.5rem;
+									li {
+										border-right: 3px solid $primary;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.c-avatar-sm {
+	width: rem(40px);
+	height: rem(40px);
+	display: inline-block;
+	margin-left: 20px;
+	img {
+		width: 100%;
+		object-fit: cover;
+		border-radius: 50%;
+	}
+}

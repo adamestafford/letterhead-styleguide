@@ -88,22 +88,6 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(document).ready(function ($) {
 		$('#myInput').focus();
 	});
 
-	//Dropdown on Click
-	$('.submenu-trigger').on('click', function () {
-		var subMenu = $(this).parent().find('.sub-menu');
-		if (subMenu.hasClass('show')) {
-			subMenu.removeClass('show');
-		} else {
-			subMenu.addClass('show');
-		}
-	});
-
-	//Simple Sidebar Toggle
-	$("#menu-toggle").click(function (e) {
-		e.preventDefault();
-		$("#wrapper").toggleClass("toggled");
-	});
-
 	//Feather Icons initialize
 	feather.replace();
 
@@ -140,6 +124,24 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(document).ready(function ($) {
 			}
 		}
 	});
+
+	var coll = document.querySelectorAll(".c-nav-menu > li a");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function () {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight) {
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+				if (this.closest("ul.sub")) {
+					this.closest("ul.sub").style.maxHeight = this.closest("ul.sub").scrollHeight + content.scrollHeight + "px";
+				}
+			}
+		});
+	}
 });
 
 /***/ }),

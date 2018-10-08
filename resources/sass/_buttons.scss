@@ -6,8 +6,9 @@
 	}
 }
 .btn {
+	background: transparent;
+	font-family: $font-family-base;
 	font-size: rem(14px);
-	color: $primary;
 	display: inline-block;
 	padding: 6px 30px;
 	margin-bottom: 0;
@@ -17,6 +18,7 @@
 	vertical-align: middle;
 	touch-action: manipulation;
 	cursor: pointer;
+	white-space: nowrap;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -25,28 +27,42 @@
 	text-transform: uppercase;
 	font-weight: $bold;
 	border-radius: rem(5px);
-	border: solid $primary 1px;
-	&:hover {
-		background: $primary;
-		color: #fff;
-	}
-}
-.btn-primary {
-	background: $primary;
-	color: #fff;
+	border: 1px solid transparent;
 	-webkit-transition:  background ease 0.2s;
 	-moz-transition:  background ease 0.2s;
 	-ms-transition:  background ease 0.2s;
 	-o-transition:  background ease 0.2s;
 	transition:  background ease 0.2s;
+	box-sizing: border-box;
+	&:hover {
+		color: $primary;
+	}
+}
+.btn-primary {
+	background: $primary;
+	color: #fff;
+	border-color: $primary;
 	&:hover {
 		background: darken($primary, 10%);
+		border-color: darken($primary, 10%);
+		color: #fff;
+	}
+}
+.btn-outline-primary {
+	background: transparent;
+	border-color: $primary;
+	color: $primary;
+	&:hover {
+		background: $primary;
+		color: #fff;
 	}
 }
 .btn-lg {
 	font-size: rem(18px);
 	padding: 20px 35px;
 	border-radius: rem(6px);
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 .close {
 	//color: $dark;

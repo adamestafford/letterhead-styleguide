@@ -1,5 +1,6 @@
-//$body-bg: theme-color("gray-200");
-//$body-color: theme-color("dark");
-//$border-color: theme-color("gray-500");
-//$sidebar-bg: $white;
-//$sidebar-bg-hover: theme-color("gray-400");
+@mixin transition($transition) {
+	-webkit-transition: $transition ease-in-out;
+	-moz-transition: $transition ease-in-out;
+	-o-transition: $transition ease-in-out;
+	transition: $transition ease-in-out;
+}

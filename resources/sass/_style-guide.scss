@@ -1,7 +1,6 @@
 /* Base */
 .border {
-	border: solid 1px #ccc;
-	padding: 15px;
+	border: solid 1px $light-gray;
 }
 .border-no-top {
 	border-left: solid 1px #ccc;
@@ -18,6 +17,36 @@
 	width: 15px;
 	height: 15px;
 	display: inline-block;
+	cursor: pointer;
+}
+.muli {
+	font-family: 'Muli', sans-serif;
+}
+.font-preview {
+	margin-bottom: 15px;
+	.font-preview-title {
+		font-size: rem(90px);
+	}
+	p.font-preview-p {
+		font-size: $font-size-base;
+		line-height: 1.3;
+	}
+	.normal {
+		font-weight: $normal;
+	}
+	.bold {
+		font-weight: $bold;
+	}
+	.normal,
+	.bold {
+
+	}
+	.font-preview-style {
+		border-left: solid 1px $light-gray;
+		p {
+			margin: 5px;
+		}
+	}
 }
 #color,
 #icon,
@@ -51,6 +80,7 @@
 }
 #type .styles p {
 	margin-bottom: 0;
+	margin-top: 3px;
 	color: #999;
 }
 #type p span {
@@ -103,6 +133,9 @@ h4 {
 			cursor: pointer;
 		}
 	}
+}
+.edit-overlay {
+	margin-left: 15px;
 }
 // Colors
 .primary {

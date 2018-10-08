@@ -2,43 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Muli:400,900);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
-// Styles
-h1 {
-	font-size: rem(36px);
-}
-h2 {
-	font-size: rem(26px);
-}
-h3 {
-	font-size: rem(20px);
-	font-weight: $bold;
-}
-h4 {
-	font-size: rem(20px);
-}
-h5 {
-	font-size: rem(16px);
-}
-p {
-	font-size: rem(16px);
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-	font-family: 'Muli', sans-serif;
-	font-style: normal;
-}
-h1,
-h2,
-h4,
-h5 {
-	//font-weight: $normal;
-}
-small {
-	font-size: rem(15px);
-}
 .hero {
 	font-size: 75px;
 	font-weight: $bold;
