@@ -6,6 +6,7 @@
 .form-footer {
 	padding: 15px;
 	border-top: solid 1px $light-gray;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 form {
@@ -53,22 +54,4 @@ form {
 			background-color: #fff;
 		}
 	}
-}
-select {
-	padding-left: 15px;
-	width: 100%;
-	height: calc(2.25rem + 12px);
-	border: none;
-	font-size: rem(16px);
-	color: $dark;
-	border-radius: 0;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	background-color: transparent;
-	border-bottom: 2px solid $light-gray;
-	//TODO Fix Form Icon location
-	//background-image: url('../../public/images/icons/chevron-down.png');
-	background-repeat: no-repeat;
-	background-size: 25px 25px;
-	background-position: right;
 }
